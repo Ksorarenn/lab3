@@ -17,7 +17,7 @@ public class Main {
         int j;//Добавил заранее, т.к. вне второго цикла j не видно
         for(int i = 1; i<Array.length; i++){
             int temp = Array[i];
-            for(j = i; j > 0 && temp < Array[j-1]; j--){
+            for(j = i; j > 0 && temp < Array[j - 1]; j--){
                 Array[j] = Array[j - 1];
             }
             Array[j] = temp;
